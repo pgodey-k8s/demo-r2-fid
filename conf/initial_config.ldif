@@ -1,0 +1,411 @@
+dn: cn=config
+objectclass: top
+objectclass: container
+cn: config
+
+dn: ou=globalaci,cn=config
+ou: GlobalAci
+description: Access Permission Settings
+objectclass: top
+objectclass: organizationalunit
+
+dn: ou=globalgroups,cn=config
+ou: GlobalGroups
+objectclass: top
+objectclass: organizationalunit
+
+dn: ou=globalsettings,cn=config
+ou: GlobalSettings
+objectclass: top
+objectclass: organizationalunit
+
+dn: ou=globalusers,cn=config
+ou: globalusers
+objectclass: top
+objectclass: organizationalunit
+
+dn: ou=krbusers,cn=config
+ou: krbusers
+objectClass: top
+objectClass: organizationalUnit
+
+dn: cn=cn_changelog,ou=globalaci,cn=config
+subtreeACI: cn=changelog#grant:r#[all]#public:
+subtreeACI: cn=changelog#grant:v#[entry]#public:
+acilocation: cn=changelog
+objectclass: top
+objectclass: vdACI
+cn: cn_changelog
+
+dn: cn=cn_config,ou=globalaci,cn=config
+subtreeACI: cn=config#grant:r#[all]#public:
+subtreeACI: cn=config#grant:v#[entry]#public:
+subtreeACI: cn=config#grant:rwo#[all]#group:cn=directory administrators,ou=globalgroups,cn=config
+subtreeACI: cn=config#grant:vad#[entry]#group:cn=directory administrators,ou=globalgroups,cn=config
+subtreeACI: cn=config#grant:rwo#[all]#group:cn=operator,ou=globalgroups,cn=config
+subtreeACI: cn=config#grant:vad#[entry]#group:cn=operator,ou=globalgroups,cn=config
+acilocation: cn=config
+objectclass: top
+objectclass: vdACI
+cn: cn_config
+
+dn: cn=ou_globalaci_cn_config,ou=globalaci,cn=config
+objectclass: top
+objectclass: vdACI
+cn: ou_globalaci_cn_config
+acilocation: ou=globalaci,cn=config
+subtreeACI: ou=globalaci,cn=config#grant:rwo#[all]#group:cn=directory administrators,ou=globalgroups,cn=config
+subtreeACI: ou=globalaci,cn=config#grant:vad#[entry]#group:cn=directory administrators,ou=globalgroups,cn=config
+subtreeACI: ou=globalaci,cn=config#grant:rwo#[all]#group:cn=aciadmin,ou=globalgroups,cn=config
+subtreeACI: ou=globalaci,cn=config#grant:vad#[entry]#group:cn=aciadmin,ou=globalgroups,cn=config
+
+dn: cn=directory administrators,ou=globalgroups,cn=config
+ou: GlobalGroups
+objectclass: top
+objectclass: groupofuniquenames
+uniquemember: uid=superadmin,ou=globalusers,cn=config
+cn: Directory Administrators
+vdPrivilege: config-read
+vdPrivilege: config-write
+vdPrivilege: services-restart
+vdPrivilege: services-shutdown
+vdPrivilege: update-schema
+vdPrivilege: instance-read
+vdPrivilege: instance-write
+vdPrivilege: naming-context-read
+vdPrivilege: naming-context-write
+vdPrivilege: data-source-read
+vdPrivilege: data-source-write
+vdPrivilege: data-store-read
+vdPrivilege: data-store-write
+vdPrivilege: acl-read
+vdPrivilege: acl-write
+vdPrivilege: ics-admin
+vdPrivilege: tasks-admin
+vdPrivilege: globalidviewer-read
+vdPrivilege: globalidviewer-write
+vdPrivilege: globalidviewer-designer
+
+dn: cn=operator,ou=globalgroups,cn=config
+description: Operator Role 
+objectclass: top
+objectclass: groupOfUniqueNames
+uniqueMember: uid=operator,ou=globalusers,cn=config
+cn: operator
+vdPrivilege: config-read
+vdPrivilege: config-write
+vdPrivilege: services-restart
+vdPrivilege: services-shutdown
+vdPrivilege: data-store-read
+vdPrivilege: data-store-write
+vdPrivilege: tasks-admin
+vdPrivilege: naming-context-read
+
+dn: cn=namespaceadmin,ou=globalgroups,cn=config
+description: Role that manages Namespace
+objectclass: top
+objectclass: groupOfUniqueNames
+uniqueMember: uid=namespaceadmin,ou=globalusers,cn=config
+cn: namespaceadmin
+vdPrivilege: config-read
+vdPrivilege: config-write
+vdPrivilege: services-restart
+vdPrivilege: update-schema
+vdPrivilege: naming-context-read
+vdPrivilege: naming-context-write
+vdPrivilege: data-source-read
+vdPrivilege: data-source-write
+vdPrivilege: data-store-read
+vdPrivilege: data-store-write
+vdPrivilege: tasks-admin
+vdPrivilege: ics-admin
+
+dn: cn=schemaadmin,ou=globalgroups,cn=config
+description: Role that manages Directory Schema
+objectclass: top
+objectclass: groupOfUniqueNames
+uniqueMember: uid=schemaadmin,ou=globalusers,cn=config
+cn: schemaadmin
+vdPrivilege: config-read
+vdPrivilege: update-schema
+vdPrivilege: data-source-read
+vdPrivilege: data-source-write
+
+dn: cn=aciadmin,ou=globalgroups,cn=config
+description: Role that manages ACIs
+objectclass: top
+objectclass: groupOfUniqueNames
+uniqueMember: uid=aciadmin,ou=globalusers,cn=config
+cn: aciadmin
+vdPrivilege: config-read
+vdPrivilege: acl-read
+vdPrivilege: acl-write
+vdPrivilege: naming-context-read
+
+dn: cn=readonly,ou=globalgroups,cn=config
+description: Role that grants Read-Only permission on the configuration
+objectclass: top
+objectclass: groupOfUniqueNames
+uniqueMember: uid=readonly,ou=globalusers,cn=config
+cn: readonly
+vdPrivilege: config-read
+vdPrivilege: instance-read
+vdPrivilege: naming-context-read
+vdPrivilege: data-source-read
+vdPrivilege: globalidviewer-read
+
+dn: cn=special users,ou=globalgroups,cn=config
+ou: GlobalGroups
+objectclass: top
+objectclass: groupofuniquenames
+uniquemember: uid=jwalker,ou=People,o=radiantlogic
+cn: Special Users
+
+dn: cn=icsadmin,ou=globalgroups,cn=config
+description: Role that manages ICS Topologies
+objectclass: top
+objectclass: groupOfUniqueNames
+uniqueMember: uid=icsadmin,ou=globalusers,cn=config
+cn: icsadmin
+vdPrivilege: config-read
+vdPrivilege: ics-admin
+vdPrivilege: ics-workflow-approve
+vdPrivilege: config-write
+vdPrivilege: naming-context-read
+vdPrivilege: tasks-admin
+vdPrivilege: data-source-read
+vdPrivilege: globalidviewer-read
+vdPrivilege: globalidviewer-write
+vdPrivilege: globalidviewer-designer
+
+dn: cn=icsoperator,ou=globalgroups,cn=config
+description: Role that manages ICS Topologies with restricted write access
+objectclass: top
+objectclass: groupOfUniqueNames
+uniqueMember: uid=icsoperator,ou=globalusers,cn=config
+cn: icsoperator
+vdPrivilege: config-read
+vdPrivilege: ics-operator
+
+dn: cn=approvers,ou=globalgroups,cn=config
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: approvers
+vdPrivilege: config-read
+vdPrivilege: ics-workflow-approve
+
+dn: cn=Global ID Viewer Design,ou=globalgroups,cn=config
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: Global ID Viewer Design
+vdPrivilege: config-read
+vdPrivilege: config-write
+vdPrivilege: globalidviewer-designer
+vdPrivilege: tasks-admin
+
+dn: cn=Global ID Viewer Write,ou=globalgroups,cn=config
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: Global ID Viewer Write
+vdPrivilege: config-read
+vdPrivilege: globalidviewer-write
+
+dn: cn=ClearAttributesOnly,ou=globalgroups,cn=config
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: ClearAttributesOnly
+
+dn: ou=cachedependency,ou=globalsettings,cn=config
+ou: cachedependency
+objectclass: top
+objectclass: organizationalunit
+
+dn: ou=groupmigration,ou=globalsettings,cn=config
+ou: GroupMigration
+description: Settings for group migration wizard
+objectclass: top
+objectclass: organizationalunit
+
+dn: ou=vdsschema,ou=globalsettings,cn=config
+ou: VdsSchema
+description: ORX list
+objectclass: top
+objectclass: organizationalunit
+
+dn: ou=virtualgroups,ou=globalsettings,cn=config
+uuid: b8f8a0f1-8612-43f5-8ff7-0163ac985e48
+ou: virtualgroups
+objectclass: top
+objectclass: organizationalunit
+
+dn: cn=ou_hrdatabase_o_vds,ou=vdsschema,ou=globalsettings,cn=config
+vdldapschema: true
+ou: vdsschema
+uuid: 69573717-f372-4176-9428-20701b1eec95
+objectclass: top
+objectclass: vdorx
+vdorigin: org
+cn: ou_hrdatabase_o_vds
+
+dn: cn=ou_hr_o_examples,ou=vdsschema,ou=globalsettings,cn=config
+uuid: b5b5878e-4069-4e53-a82c-1319794381a9
+ou: vdsschema
+vdldapschema: true
+objectclass: top
+objectclass: vdorx
+cn: ou_hr_o_examples
+vdorigin: org
+
+dn: cn=virtualgroups,ou=virtualgroups,ou=globalsettings,cn=config
+uuid: b0a6a707-e3e8-4da7-b409-bd61fb243ef4
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: virtualgroups
+
+dn: cn=Accounting,cn=virtualgroups,ou=virtualgroups,ou=globalsettings,cn=config
+uuid: 7b33b80f-c06e-42d3-ada0-220c67eee8d2
+objectclass: top
+objectclass: group
+cn: Accounting
+
+dn: cn=global,cn=virtualgroups,ou=virtualgroups,ou=globalsettings,cn=config
+uuid: 2157720f-4ea0-45b7-a3ef-db9c8aea3d7c
+objectclass: top
+objectclass: group
+cn: global
+
+dn: cn=Hobby,cn=virtualgroups,ou=virtualgroups,ou=globalsettings,cn=config
+uuid: 924ce903-f206-476a-b92f-bb6a8b3940b9
+objectclass: top
+objectclass: group
+cn: Hobby
+
+dn: cn=Inside Sales,cn=virtualgroups,ou=virtualgroups,ou=globalsettings,cn=config
+uuid: afeac671-3125-41d7-9c94-966bd116f179
+objectclass: top
+objectclass: group
+cn: Inside Sales
+
+dn: cn=NoGroup,cn=virtualgroups,ou=virtualgroups,ou=globalsettings,cn=config
+uuid: b80a0e0d-a3cc-40a0-a6b1-780ee7808465
+objectclass: top
+objectclass: group
+cn: NoGroup
+
+dn: cn=Outside Sales,cn=virtualgroups,ou=virtualgroups,ou=globalsettings,cn=config
+uuid: 16ff3c3d-f6d3-4675-a990-390849391bf1
+objectclass: top
+objectclass: group
+cn: Outside Sales
+
+dn: cn=Preference,cn=virtualgroups,ou=virtualgroups,ou=globalsettings,cn=config
+uuid: 0f3b18b6-0b13-42e9-a5e9-0d3cf40ea653
+objectclass: top
+objectclass: group
+cn: Preference
+
+dn: cn=Sales,cn=virtualgroups,ou=virtualgroups,ou=globalsettings,cn=config
+uuid: 535d1ce5-f487-4e7d-91a5-220d3412cb2b
+objectclass: top
+objectclass: group
+cn: Sales
+
+dn: uid=aciadmin,ou=globalusers,cn=config
+uid: aciadmin
+userpassword: {SSHA}+ULYPdYK2X4bI1I0Icl0FVSDa2ufQ6MX8BvgUg==
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+givenname: ACI
+sn: Admin
+cn: ACI Admin
+
+dn: uid=icsadmin,ou=globalusers,cn=config
+uid: icsadmin
+userpassword: {SSHA}+ULYPdYK2X4bI1I0Icl0FVSDa2ufQ6MX8BvgUg==
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+givenname: ICS
+sn: Admin
+cn: ICS Admin
+
+dn: uid=icsoperator,ou=globalusers,cn=config
+uid: icsoperator
+userpassword: {SSHA}+ULYPdYK2X4bI1I0Icl0FVSDa2ufQ6MX8BvgUg==
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+givenname: ICS
+sn: Operator
+cn: ICS Operator
+
+dn: uid=namespaceadmin,ou=globalusers,cn=config
+uid: namespaceadmin
+userpassword: {SSHA}+ULYPdYK2X4bI1I0Icl0FVSDa2ufQ6MX8BvgUg==
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+givenname: Namespace
+sn: Admin
+cn: Namespace Admin
+
+dn: uid=operator,ou=globalusers,cn=config
+uid: operator
+userpassword: {SSHA}+ULYPdYK2X4bI1I0Icl0FVSDa2ufQ6MX8BvgUg==
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+givenname: Operator
+sn: Admin
+cn: Operator Admin
+
+dn: uid=schemaadmin,ou=globalusers,cn=config
+uid: schemaadmin
+userpassword: {SSHA}+ULYPdYK2X4bI1I0Icl0FVSDa2ufQ6MX8BvgUg==
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+givenname: Schema
+sn: Admin
+cn: Schema Admin
+
+dn: uid=superadmin,ou=globalusers,cn=config
+uid: superadmin
+userpassword: {SSHA}+ULYPdYK2X4bI1I0Icl0FVSDa2ufQ6MX8BvgUg==
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+givenname: Super
+sn: Admin
+cn: Super Admin
+
+dn: uid=readonly,ou=globalusers,cn=config
+uid: readonly
+userpassword: {SSHA}+ULYPdYK2X4bI1I0Icl0FVSDa2ufQ6MX8BvgUg==
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+givenname: ReadOnly
+sn: Admin
+cn: ReadOnly Admin
+
+dn: uid=webapp_user,ou=globalusers,cn=config
+uid: webapp_user
+userpassword: {SSHA}HIYd6V2mMuSg0nX0Zd9DNmsvqEy19HyE8y9EWEKvcCSNjzgHG5IXeA==
+uuid: 68f33053-de54-4395-8b67-ec106278d9f7
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+givenname: Webapp
+sn: User
+cn: Webapp User

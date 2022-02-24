@@ -1,0 +1,38 @@
+# This ia a template file for root_DSE. Whatever appears in this file is going to be published
+# when client issue a root_DSE request for the server's information.
+# The template file takes the format of LDIF as follows,
+#
+#         [id]
+#         dn: entryDN
+#         attrType: attrValue
+#         # comment-string
+#         ....
+#
+#    where:
+#         ld is an optional numeric entry id (this is not used by the listener)
+#         entryDN is the LDAP DN of the directory entry
+#         attrType is an LDAP attribute type
+#         attrValue is a value for attrType
+# The root dn [MUST]
+dn: cn=rootdse
+# Vendor's information
+vendorname: Radiant Logic, Inc.
+vendorversion: RadiantOne 7.3
+# This is the root objectClass
+objectclass: top
+# The top entry DNs (rootnamingcontexts) that can be accessed by clients 
+#namingContexts: cn=changelog
+# The top entry DNs (rootnamingcontexts) that can be hidden 
+hiddenContexts: cn=cacherefreshlog
+hiddencontexts: cn=extendedxjoin
+hiddencontexts: dv=commonobjectcatalog
+# The DN for the schema
+subschemaSubentry: cn=schema
+# The version number the listener supports
+supportedldapversion: 2
+supportedldapversion: 3
+createTimeStamp: 20090401214153Z
+modifyTimeStamp: 20090401214153Z
+creatorsName: cn=server,cn=config
+modifiersName: cn=server,cn=config
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?><jardesc>
+    <jar path="/opt/radiantone/vds/vds_server/custom/lib/customobjects.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/custom/customobjectjarmaker.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="true" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="/vdslib/vdscustom" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <javaElement handleIdentifier="=custom/src&lt;com.rli.scripts.customobjects.azure.services"/>
+        <javaElement handleIdentifier="=custom/src&lt;com.rli.scripts.customobjects.azure.dto"/>
+        <javaElement handleIdentifier="=custom/src&lt;com.rli.scripts.customobjects.azure.exception"/>
+        <javaElement handleIdentifier="=custom/src&lt;com.rli.scripts.customobjects"/>
+        <javaElement handleIdentifier="=custom/src&lt;com.rli.scripts.customobjects.concurco.services"/>
+        <javaElement handleIdentifier="=custom/src&lt;com.rli.scripts.customobjects.concurco.data"/>
+        <javaElement handleIdentifier="=custom/src&lt;com.rli.scripts.customobjects.azure.utils"/>
+        <javaElement handleIdentifier="=custom/src&lt;com.rli.scripts.customobjects.gcontacts"/>
+        <javaElement handleIdentifier="=custom/src&lt;com.rli.scripts.customobjects.workday"/>
+        <javaElement handleIdentifier="=custom/src&lt;com.rli.scripts.customobjects.workday30"/>
+        <javaElement handleIdentifier="=custom/src&lt;com.rli.scripts.customobjects.concurco.utils"/>
+         <javaElement handleIdentifier="=custom/src&lt;com.rli.scripts.customobjects.sharepointco"/>
+        <javaElement handleIdentifier="=custom/src&lt;com.rli.azure.tokenhandler"/>
+        <javaElement handleIdentifier="=custom/src&lt;com.rli.scripts.customobjects.googledirectory"/>
+        <javaElement handleIdentifier="=custom/src&lt;com.rli.scripts.customobjects.googledirectory.googleobjects"/>
+        <javaElement handleIdentifier="=custom/src&lt;com.rli.scripts.customobjects.rsa"/>
+        <javaElement handleIdentifier="=custom/src&lt;com.rli.scripts.customobjects.hooks"/>
+    </selectedElements>
+</jardesc>

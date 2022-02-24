@@ -1,0 +1,1 @@
+The metadata xml files from the Relying Parties that will query the VDS SAML Attribute Service need to be place in this folder.

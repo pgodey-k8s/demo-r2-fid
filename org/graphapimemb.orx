@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Xml>
+    <ORG Name="graphapimemb">
+        <AccessMethod>PDM</AccessMethod>
+        <PDM>
+            <Name>graphapimemb</Name>
+            <DataSource>{AES}tQ+zr3e3ITIRRQB3xDBjdhiKCQrB+tpWhy4sWOXTSx8=-8QSs21uUd336/C6s6UM5Uw==</DataSource>
+            <DataSourceType>XML</DataSourceType>
+            <Tables>
+                <Table ID="users">
+                    <Name>users</Name>
+                    <Type>TABLE</Type>
+                    <LDAPObjectClass>vdusers</LDAPObjectClass>
+                    <Columns>
+                        <Column ID="odata-type">
+                            <Name>odata-type</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="objecttype">
+                            <Name>objecttype</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="objectid">
+                            <Name>objectid</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="deletiontimestamp">
+                            <Name>deletiontimestamp</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="accountenabled">
+                            <Name>accountenabled</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="city">
+                            <Name>city</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="companyname">
+                            <Name>companyname</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="country">
+                            <Name>country</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="department">
+                            <Name>department</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="dirsyncenabled">
+                            <Name>dirsyncenabled</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="displayname">
+                            <Name>displayname</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="facsimiletelephonenumber">
+                            <Name>facsimiletelephonenumber</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="givenname">
+                            <Name>givenname</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="immutableid">
+                            <Name>immutableid</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="jobtitle">
+                            <Name>jobtitle</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="lastdirsynctime">
+                            <Name>lastdirsynctime</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="mail">
+                            <Name>mail</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="mailnickname">
+                            <Name>mailnickname</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="mobile">
+                            <Name>mobile</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="onpremisessecurityidentifier">
+                            <Name>onpremisessecurityidentifier</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="passwordpolicies">
+                            <Name>passwordpolicies</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="physicaldeliveryofficename">
+                            <Name>physicaldeliveryofficename</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="postalcode">
+                            <Name>postalcode</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="preferredlanguage">
+                            <Name>preferredlanguage</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="sipproxyaddress">
+                            <Name>sipproxyaddress</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="state">
+                            <Name>state</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="streetaddress">
+                            <Name>streetaddress</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="surname">
+                            <Name>surname</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="telephonenumber">
+                            <Name>telephonenumber</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="usagelocation">
+                            <Name>usagelocation</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="userprincipalname">
+                            <Name>userprincipalname</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="usertype">
+                            <Name>usertype</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="passwordprofile-password">
+                            <Name>passwordprofile-password</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="passwordprofile-forcechangepasswordnextlogin">
+                            <Name>passwordprofile-forcechangepasswordnextlogin</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="assignedlicenses">
+                            <Name>assignedlicenses</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="memberof">
+                            <Name>memberof</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                    <Column ID="manager"><Name>manager</Name><Type>VARCHAR(80)</Type><Nullable>0</Nullable><DataType>12</DataType><Alias/></Column><Column ID="directreports"><Name>directreports</Name><Type>VARCHAR(80)</Type><Nullable>0</Nullable><DataType>12</DataType><Alias/></Column><Column ID="owneddevices"><Name>owneddevices</Name><Type>VARCHAR(80)</Type><Nullable>0</Nullable><DataType>12</DataType><Alias/></Column><Column ID="registereddevices"><Name>registereddevices</Name><Type>VARCHAR(80)</Type><Nullable>0</Nullable><DataType>12</DataType><Alias/></Column><Column ID="employeeid"><Name>employeeid</Name><Type>VARCHAR(80)</Type><Nullable>0</Nullable><DataType>12</DataType><Alias/></Column></Columns>
+                    <PrimaryKey>userprincipalname</PrimaryKey>
+                </Table>
+                <Table ID="groups">
+                    <Name>groups</Name>
+                    <Type>TABLE</Type>
+                    <LDAPObjectClass>vdgroups</LDAPObjectClass>
+                    <Columns>
+                        <Column ID="odata-type">
+                            <Name>odata-type</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="objecttype">
+                            <Name>objecttype</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="objectid">
+                            <Name>objectid</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="deletiontimestamp">
+                            <Name>deletiontimestamp</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="description">
+                            <Name>description</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="dirsyncenabled">
+                            <Name>dirsyncenabled</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="displayname">
+                            <Name>displayname</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="lastdirsynctime">
+                            <Name>lastdirsynctime</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="mail">
+                            <Name>mail</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="mailnickname">
+                            <Name>mailnickname</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="mailenabled">
+                            <Name>mailenabled</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="onpremisessecurityidentifier">
+                            <Name>onpremisessecurityidentifier</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="securityenabled">
+                            <Name>securityenabled</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="member">
+                            <Name>member</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                    <Column ID="owners"><Name>owners</Name><Type>VARCHAR(80)</Type><Nullable>0</Nullable><DataType>12</DataType><Alias/></Column></Columns>
+                    <PrimaryKey>objectid</PrimaryKey>
+                </Table>
+                <Table ID="contacts">
+                    <Name>contacts</Name>
+                    <Type>TABLE</Type>
+                    <LDAPObjectClass>vdcontacts</LDAPObjectClass>
+                    <Columns>
+                        <Column ID="odata-type">
+                            <Name>odata-type</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="objecttype">
+                            <Name>objecttype</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="objectid">
+                            <Name>objectid</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="deletiontimestamp">
+                            <Name>deletiontimestamp</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="city">
+                            <Name>city</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="companyname">
+                            <Name>companyname</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="country">
+                            <Name>country</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="department">
+                            <Name>department</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="dirsyncenabled">
+                            <Name>dirsyncenabled</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="displayname">
+                            <Name>displayname</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="facsimiletelephonenumber">
+                            <Name>facsimiletelephonenumber</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="givenname">
+                            <Name>givenname</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="jobtitle">
+                            <Name>jobtitle</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="lastdirsynctime">
+                            <Name>lastdirsynctime</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="mail">
+                            <Name>mail</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="mailnickname">
+                            <Name>mailnickname</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="mobile">
+                            <Name>mobile</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="physicaldeliveryofficename">
+                            <Name>physicaldeliveryofficename</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="postalcode">
+                            <Name>postalcode</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="provisioningerrors">
+                            <Name>provisioningerrors</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="proxyaddresses">
+                            <Name>proxyaddresses</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="sipproxyaddress">
+                            <Name>sipproxyaddress</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="state">
+                            <Name>state</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="streetaddress">
+                            <Name>streetaddress</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="surname">
+                            <Name>surname</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="telephonenumber">
+                            <Name>telephonenumber</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                    <Column ID="manager"><Name>manager</Name><Type>VARCHAR(80)</Type><Nullable>0</Nullable><DataType>12</DataType><Alias/></Column><Column ID="directreports"><Name>directreports</Name><Type>VARCHAR(80)</Type><Nullable>0</Nullable><DataType>12</DataType><Alias/></Column></Columns>
+                    <PrimaryKey>objectid</PrimaryKey>
+                </Table>
+                <Table ID="devices">
+                    <Name>devices</Name>
+                    <Type>TABLE</Type>
+                    <LDAPObjectClass>vddevices</LDAPObjectClass>
+                    <Columns>
+                        <Column ID="odata-type">
+                            <Name>odata-type</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="objecttype">
+                            <Name>objecttype</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="objectid">
+                            <Name>objectid</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="deletiontimestamp">
+                            <Name>deletiontimestamp</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="accountenabled">
+                            <Name>accountenabled</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="alternativesecurityids">
+                            <Name>alternativesecurityids</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="approximatelastlogontimestamp">
+                            <Name>approximatelastlogontimestamp</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="deviceid">
+                            <Name>deviceid</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="devicemetadata">
+                            <Name>devicemetadata</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="deviceobjectversion">
+                            <Name>deviceobjectversion</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="deviceostype">
+                            <Name>deviceostype</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="deviceosversion">
+                            <Name>deviceosversion</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="devicephysicalids">
+                            <Name>devicephysicalids</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="devicetrusttype">
+                            <Name>devicetrusttype</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="dirsyncenabled">
+                            <Name>dirsyncenabled</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="displayname">
+                            <Name>displayname</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="iscompliant">
+                            <Name>iscompliant</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="ismanaged">
+                            <Name>ismanaged</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                        <Column ID="lastdirsynctime">
+                            <Name>lastdirsynctime</Name>
+                            <Type>VARCHAR(80)</Type>
+                            <Nullable>0</Nullable>
+                            <DataType>12</DataType>
+                            <Alias/>
+                        </Column>
+                    <Column ID="registeredowners"><Name>registeredowners</Name><Type>VARCHAR(80)</Type><Nullable>0</Nullable><DataType>12</DataType><Alias/></Column><Column ID="registeredusers"><Name>registeredusers</Name><Type>VARCHAR(80)</Type><Nullable>0</Nullable><DataType>12</DataType><Alias/></Column></Columns>
+                    <PrimaryKey>objectid</PrimaryKey>
+                </Table>
+            </Tables>
+        </PDM>
+    </ORG>
+</Xml>

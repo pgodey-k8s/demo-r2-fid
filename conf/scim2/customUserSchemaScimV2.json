@@ -1,0 +1,253 @@
+{
+    "id": "urn:ietf:params:scim:schemas:extension:custom:2.0:User",
+    "name": "CustomUser",
+    "description": "Custom User",
+    "attributes": [
+		{
+            "name": "audio",
+            "type": "binary",
+            "multiValued": true,
+            "description": "Numeric or alphanumeric identifier associated with audio",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "businessCategory",
+            "type": "string",
+            "multiValued": false,
+            "description": "Identifies name of business category of employee",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+        {
+            "name": "carLicense",
+            "type": "string",
+            "multiValued": false,
+            "description": "Numeric or alphanumeric identifier associated with users car",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "homePostalAddress",
+            "type": "string",
+            "multiValued": false,
+            "description": "Identifies name home postal address",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "pager",
+            "type": "string",
+            "multiValued": false,
+            "description": "Identifies user pager",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "photo",
+            "type": "binary",
+            "multiValued": false,
+            "description": "Identifies user photo",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "roomNumber",
+            "type": "string",
+            "multiValued": false,
+            "description": "Identifies user room number",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "secretary",
+            "type": "string",
+            "multiValued": false,
+            "description": "Identifies id of secretary",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "x500uniqueIdentifier",
+            "type": "binary",
+            "multiValued": false,
+            "description": "Identifier",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "userSMIMECertificate",
+            "type": "string",
+            "multiValued": false,
+            "description": "Certificate",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "userPKCS12",
+            "type": "string",
+            "multiValued": false,
+            "description": "User PKCS 12",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "seeAlso",
+            "type": "string",
+            "multiValued": false,
+            "description": "More information",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "x121Address",
+            "type": "string",
+            "multiValued": false,
+            "description": "x121 address",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "registeredAddress",
+            "type": "string",
+            "multiValued": false,
+            "description": "Identifies registered address",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "destinationIndicator",
+            "type": "string",
+            "multiValued": false,
+            "description": "Identifies destination indicator",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "preferredDeliveryMethod",
+            "type": "string",
+            "multiValued": false,
+            "description": "Preferred delivery method",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "telexNumber",
+            "type": "string",
+            "multiValued": false,
+            "description": "Telex number",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "teletexTerminalIdentifier",
+            "type": "string",
+            "multiValued": false,
+            "description": "Identifies teletex terminal",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "internationaliSDNNumber",
+            "type": "string",
+            "multiValued": false,
+            "description": "ISDN number",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "postOfficeBox",
+            "type": "string",
+            "multiValued": false,
+            "description": "Post office box",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "physicalDeliveryOfficeName",
+            "type": "string",
+            "multiValued": false,
+            "description": "Physical delivery office name",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        },
+		{
+            "name": "userAccountControl",
+            "type": "string",
+            "multiValued": false,
+            "description": "useraccountcontrol",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        }
+    ],
+    "meta": {
+        "resourceType": "Schema",
+        "location": "/v2/Schemas/urn:ietf:params:scim:schemas:custom:2.0:User"
+    }
+}

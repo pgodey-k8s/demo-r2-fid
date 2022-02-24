@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Xml> 
+  <ORG Name="jdbcxml"> 
+    <AccessMethod>PDM</AccessMethod> 
+    <PDM> 
+      <Name>jdbcxml</Name> 
+      <DataSource>driver-class-name=sun.jdbc.odbc.JdbcOdbcDriver;url=jdbc:odbc:rli_BestGuy;username=;password=;DBMS Name=ACCESS</DataSource> 
+      <DataSourceType>JDBC</DataSourceType> 
+      <Version>2.0</Version> 
+      <Tables> 
+	<Table ID="JDBC-ODBC Bridge from Sun"> 
+	  <Name>JDBC-ODBC Bridge from Sun</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>sun.jdbc.odbc.JdbcOdbcDriver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:odbc:«database?»</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:odbc:«database?»"> 
+	      <Name>jdbc:odbc:«database?»</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="Oracle"> 
+	  <Name>Oracle</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>oracle.jdbc.driver.OracleDriver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:oracle:oci8:@«database?»</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:oracle:oci8:@«database?»"> 
+	      <Name>jdbc:oracle:oci8:@«database?»</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="Oracle (thin)"> 
+	  <Name>Oracle (thin)</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>oracle.jdbc.driver.OracleDriver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:oracle:thin:@«host?»:1521:«database?»</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:oracle:thin:@«host?»:1521:«database?»"> 
+	      <Name>jdbc:oracle:thin:@«host?»:1521:«database?»</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="Interbase"> 
+	  <Name>Interbase</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>interbase.interclient.Driver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:interbase://hostname/directoryAndFile.gdb</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:interbase://hostname/directoryAndFile.gdb"> 
+	      <Name>jdbc:interbase://hostname/directoryAndFile.gdb</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="Borland DataStore"> 
+	  <Name>Borland DataStore</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>com.borland.datastore.jdbc.DataStoreDriver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:borland:dslocal:directoryAndFile.jds</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:borland:dslocal:directoryAndFile.jds"> 
+	      <Name>jdbc:borland:dslocal:directoryAndFile.jds</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="Microsoft SQL Server"> 
+	  <Name>Microsoft SQL Server </Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>com.microsoft.sqlserver.jdbc.SQLServerDriver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:microsoft:sqlserver://&lt;host&gt;:&lt;port&gt;;DatabaseName=&lt;databasename&gt;;SelectMethod=cursor;sendStringParametersAsUnicode=false</PrimaryKey> 
+	  <Columns>
+	  <Column ID="jdbc:sqlserver://&lt;host>:&lt;port>;DatabaseName=&lt;databasename>;SelectMethod=cursor;sendStringParametersAsUnicode=false"><Name>jdbc:sqlserver://&lt;host&gt;:&lt;port&gt;;DatabaseName=&lt;databasename&gt;;SelectMethod=cursor;sendStringParametersAsUnicode=false</Name></Column></Columns> 
+	</Table> 
+	<Table ID="Misrosoft SQL server (weblogic)"> 
+	  <Name>Misrosoft SQL server (weblogic)</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>weblogic.jdbc.mssqlserver4.Driver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:weblogic:mssqlserver4:hostname:1433</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:weblogic:mssqlserver4:hostname:1433"> 
+	      <Name>jdbc:weblogic:mssqlserver4:hostname:1433</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="Cloudscape RMI"> 
+	  <Name>Cloudscape RMI</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>RmiJdbc.RJDriver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:rmi://«host?»:1099/jdbc:cloudscape:«database?»;create=true</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:rmi://«host?»:1099/jdbc:cloudscape:«database?»;create=true"> 
+	      <Name>jdbc:rmi://«host?»:1099/jdbc:cloudscape:«database?»;create=true</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="IBM DB2"> 
+	  <Name>IBM DB2</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>com.ibm.db2.jcc.DB2Driver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:db2://«host?»:6789/«database?»</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:db2://«host?»:6789/«database?»"> 
+	      <Name>jdbc:db2://«host?»:6789/«database?»</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="Informix"> 
+	  <Name>Informix</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>com.informix.jdbc.IfxDriver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:informix-sqli://«host?»:1533/«database?»:INFORMIXSERVER=«server?»</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:informix-sqli://«host?»:1533/«database?»:INFORMIXSERVER=«server?»"> 
+	      <Name>jdbc:informix-sqli://«host?»:1533/«database?»:INFORMIXSERVER=«server?»</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="InstantDb"> 
+	  <Name>InstantDb</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>jdbc.idbDriver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:idb:«database?».prp</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:idb:«database?».prp"> 
+	      <Name>jdbc:idb:«database?».prp</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	 
+	<Table ID="PointBase"> 
+	  <Name>PointBase</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>com.pointbase.jdbc.jdbcUniversalDriver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:pointbase://«host?»/«database?»</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:pointbase://«host?»/«database?»"> 
+	      <Name>jdbc:pointbase://«host?»/«database?»</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="PostgreSQL"> 
+	  <Name>PostgreSQL</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>org.postgresql.Driver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:postgresql://«host?»/«database?»</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:postgresql://«host?»/«database?»"> 
+	      <Name>jdbc:postgresql://«host?»/«database?»</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="PostgreSQL v6.5"> 
+	  <Name>PostgreSQL v6.5</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>postgresql.Driver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:postgresql://«host?»/«database?»</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:postgresql://«host?»/«database?»"> 
+	      <Name>jdbc:postgresql://«host?»/«database?»</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="Novell LDAP"> 
+	  <Name>Novell LDAP</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>com.novell.sql.LDAPDriver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:ldap://ceres6:1389;baseDN=o=airius.com;useCleartext=true</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:ldap://ceres6:1389;baseDN=o=airius.com;useCleartext=true"> 
+	      <Name>jdbc:ldap://ceres6:1389;baseDN=o=airius.com;useCleartext=true</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="Sybase JDBC"> 
+	  <Name>Sybase JDBC</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>com.sybase.jdbc4.jdbc.SybDriver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:sybase:Tds:66.224.23.157:2048/sample</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:sybase:Tds:66.224.23.157:2048/sample"> 
+	      <Name>jdbc:sybase:Tds:66.224.23.157:2048/sample</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="Sybase JDBC old"> 
+	  <Name>Sybase JDBC old</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>com.sybase.jdbc.SybDriver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:sybase:Tds:66.224.23.157:2048/sample</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:sybase:Tds:66.224.23.157:2048/sample"> 
+	      <Name>jdbc:sybase:Tds:66.224.23.157:2048/sample</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="TANDEM SOURCE"> 
+	  <Name>TANDEM SOURCE</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>com.tandem.jdbc.t3client.driver</LDAPObjectClass> 
+	  <PrimaryKey>t3jdbc:sqlrmi://204.160.19.178:1099/jdbc:sqlmx:</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="t3jdbc:sqlrmi://204.160.19.178:1099/jdbc:sqlmx:"> 
+	      <Name>t3jdbc:sqlrmi://204.160.19.178:1099/jdbc:sqlmx:</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="TANDEM TARGET"> 
+	  <Name>TANDEM TARGET</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>com.tandem.jdbc.t3client.driver</LDAPObjectClass> 
+	  <PrimaryKey>t3jdbc:sqlrmi://204.160.23.11:1099/jdbc:sqlmx:</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="t3jdbc:sqlrmi://204.160.23.11:1099/jdbc:sqlmx:"> 
+	      <Name>t3jdbc:sqlrmi://204.160.23.11:1099/jdbc:sqlmx:</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="HSQL Database Engine In-Memory"> 
+	  <Name>HSQL Database Engine In-Memory</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>org.hsqldb.jdbcDriver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:hsqldb:.</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:hsqldb:."> 
+	      <Name>jdbc:hsqldb:.</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="HSQL Database Engine Standalone"> 
+	  <Name>HSQL Database Engine Standalone</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>org.hsqldb.jdbcDriver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:hsqldb:«database?»</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:hsqldb:«database?»"> 
+	      <Name>jdbc:hsqldb:«database?»</Name> 
+	    </Column> 
+	    <Column ID="jdbc:hsqldb:allemp1"> 
+	      <Name>jdbc:hsqldb:allemp1</Name> 
+	    </Column> 
+	    <Column ID="jdbc:hsqldb:uimdb"> 
+	      <Name>jdbc:hsqldb:uimdb</Name> 
+	    </Column> 
+	    <Column ID="jdbc:hsqldb:bmc_test"> 
+	      <Name>jdbc:hsqldb:bmc_test</Name> 
+	    </Column> 
+	    <Column ID="jdbc:hsqldb:advworks">
+	      <Name>jdbc:hsqldb:advworks</Name>
+	    </Column>
+	  </Columns> 
+	</Table> 
+	<Table ID="HSQL Database Engine Server"> 
+	  <Name>HSQL Database Engine Server</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>org.hsqldb.jdbcDriver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:hsqldb:hsql://localhost</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:hsqldb:hsql://localhost"> 
+	      <Name>jdbc:hsqldb:hsql://localhost</Name> 
+	    </Column> 
+	    <Column ID="jdbc:hsqldb:hsql://localhost:1001"> 
+	      <Name>jdbc:hsqldb:hsql://localhost:1001</Name> 
+	    </Column> 
+	    <Column ID="jdbc:hsqldb:hsql://localhost:9001"> 
+	      <Name>jdbc:hsqldb:hsql://localhost:9001</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="HSQL Database Engine WebServer"> 
+	  <Name>HSQL Database Engine WebServer</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>org.hsqldb.jdbcDriver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:hsqldb:http://«host?»</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:hsqldb:http://«host?»"> 
+	      <Name>jdbc:hsqldb:http://«host?»</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+   	<Table ID="MySQL JDBC driver">
+      	<Name>MySQL JDBC driver</Name>
+      	<Type>TABLE</Type>
+      	<LDAPObjectClass>com.mysql.jdbc.Driver</LDAPObjectClass>
+      	<PrimaryKey>jdbc:mysql://[hostname][:port]/[dbname]?sessionVariables=sql_mode=ANSI_QUOTES</PrimaryKey>
+      	<Columns>
+      		<Column ID="jdbc:mysql://[hostname][:port]/[dbname]?sessionVariables=sql_mode=ANSI_QUOTES">
+      			<Name>jdbc:mysql://[hostname][:port]/[dbname]?sessionVariables=sql_mode=ANSI_QUOTES</Name>
+      		</Column>
+      	</Columns>
+    </Table>
+   	<Table ID="MariaDB (MySQL) JDBC Driver">
+      	<Name>MariaDB (MySQL) JDBC Driver</Name>
+      	<Type>TABLE</Type>
+      	<LDAPObjectClass>org.mariadb.jdbc.Driver</LDAPObjectClass>
+      	<PrimaryKey>jdbc:mariadb://[hostname][:port]/[dbname]?sessionVariables=sql_mode=ANSI_QUOTES</PrimaryKey>
+      	<Columns>
+      		<Column ID="jdbc:mariadb://[hostname][:port]/[dbname]?sessionVariables=sql_mode=ANSI_QUOTES">
+      			<Name>jdbc:mariadb://[hostname][:port]/[dbname]?sessionVariables=sql_mode=ANSI_QUOTES</Name>
+      		</Column>
+      	</Columns>
+    </Table>
+   	<Table ID="Apache Derby">
+    	<Name>Apache Derby</Name>
+    	<Type>TABLE</Type>
+    	<LDAPObjectClass>org.apache.derby.jdbc.ClientDriver</LDAPObjectClass>
+    	<PrimaryKey>jdbc:derby://&lt;hostname&gt;:&lt;port&gt;/&lt;database name&gt;</PrimaryKey>
+    	<Columns>
+    		<Column ID="jdbc:derby://&lt;hostname>:&lt;port>/&lt;database name>">
+    			<Name>jdbc:derby://&lt;hostname&gt;:&lt;port&gt;/&lt;database name&gt;</Name>
+    		</Column>
+    	</Columns>
+    </Table> 
+    <Table ID="Microsoft SQL server - JTDS"> 
+    	<Name>Microsoft SQL server - JTDS</Name> 
+        <Type>TABLE</Type> 
+           <LDAPObjectClass>net.sourceforge.jtds.jdbc.Driver</LDAPObjectClass> 
+           <PrimaryKey>jdbc:jtds:sqlserver://[hostname]/[Database];domain=[domain_name];user=[username];password=[password]</PrimaryKey> 
+           <Columns> 
+              <Column ID="jdbc:jtds:sqlserver://[hostname>/[Database>;domain=[domain_name>;user=[username>;password=[password>"> 
+              	 <Name>jdbc:jtds:sqlserver://[hostname]/[Database];domain=[domain_name];user=[username];password=[password]</Name> 
+              </Column> 
+	  </Columns> 
+    </Table>
+	<Table ID="VRS"> 
+	  <Name>VRS</Name> 
+	  <Type>TABLE</Type> 
+	  <LDAPObjectClass>com.rli.vrs.driver.JDBCDriver</LDAPObjectClass> 
+	  <PrimaryKey>jdbc:vrs://[host]:[port]</PrimaryKey> 
+	  <Columns> 
+	    <Column ID="jdbc:vrs://[host]:[port]"> 
+	      <Name>jdbc:vrs://[host]:[port]</Name> 
+	    </Column> 
+	    <Column ID="jdbc:vrs://[host]:[port]/&amp;id=dn"> 
+	      <Name>jdbc:vrs://[host]:[port]/&amp;id=dn</Name> 
+	    </Column> 
+	    <Column ID="jdbc:vrs://[host]:[port]/vrs_northwind;vrs_rx500&amp;id=dn"> 
+	      <Name>jdbc:vrs://[host]:[port]/vrs_northwind;vrs_rx500&amp;id=dn</Name> 
+	    </Column> 
+	  </Columns> 
+	</Table> 
+	<Table ID="radiantsalesforce">
+	  <Name>radiantsalesforce</Name>
+	  <Type>TABLE</Type>
+	  <LDAPObjectClass>com.rli.jdbc.salesforce.SFDriver</LDAPObjectClass>
+	  <PrimaryKey>jdbc:salesforce:</PrimaryKey>
+	  <Columns>
+	    <Column ID="jdbc:salesforce:">
+	      <Name>jdbc:salesforce:</Name>
+	    </Column>
+	  </Columns>
+	</Table>
+     </Tables>
+	 </PDM> 
+  </ORG> 
+</Xml>

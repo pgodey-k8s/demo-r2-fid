@@ -1,0 +1,9 @@
+dn: cn=schema
+objectclasses: ( 1.3.6.1.4.1.40747.92.179365828.177447629 NAME 'document' DESC 'Standard ObjectClass' SUP top MUST ( objectclass $ cn ) MAY ( documentName $ documentType $ documentPath $ documentContent $ documentExtension $ documentDate ) )
+attributetypes: ( 1.3.6.1.4.1.40747.92.179365828.177447629.145973454 NAME 'documentName' DESC 'Standard Attribute' SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+attributetypes: ( 1.3.6.1.4.1.40747.92.179365828.177447629.146025684 NAME 'documentType' DESC 'Standard Attribute' SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+attributetypes: ( 1.3.6.1.4.1.40747.92.179365828.177447629.152379600 NAME 'documentPath' DESC 'Standard Attribute' SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+attributetypes: ( 1.3.6.1.4.1.40747.92.179365828.177447629.177448899.1386309 NAME 'documentContent' DESC 'Standard Attribute' SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+attributetypes: ( 1.3.6.1.4.1.40747.92.179365828.177447629.146088132 NAME 'documentDate' DESC 'Standard Attribute' SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+attributetypes: ( 1.3.6.1.4.1.40747.92.179365828.177447629.146091077.166881742.78 NAME 'documentExtension' DESC 'Standard Attribute' SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+

@@ -1,0 +1,58 @@
+# This ia a template file for root_DSE. Whatever appears in this file is going to be published
+# when client issue a root_DSE request for the server's information.
+# The template file takes the format of LDIF as follows,
+#
+#         [id]
+#         dn: entryDN
+#         attrType: attrValue
+#         # comment-string
+#         ....
+#
+#    where:
+#         ld is an optional numeric entry id (this is not used by the listener)
+#         entryDN is the LDAP DN of the directory entry
+#         attrType is an LDAP attribute type
+#         attrValue is a value for attrType
+# The root dn [MUST]
+dn: cn=rootdse
+# Vendor's information
+#vendorname: Radiant Logic, Inc.
+#vendorversion: 4.6
+# This is the root objectClass
+objectclass: top
+# The top entry DNs which can be accessed by clients 
+#namingContexts: o=fake
+# The DN for the schema
+subschemaSubentry: cn=schema
+# The version number the listener supports
+supportedldapversion: 2
+supportedldapversion: 3
+createTimeStamp: 20030808214153Z
+modifyTimeStamp: 20030808214153Z
+creatorsName: cn=server,cn=plugins,cn=config
+modifiersName: cn=server,cn=plugins,cn=config
+supportedExtension: 2.16.840.1.113730.3.5.7
+supportedExtension: 2.16.840.1.113730.3.5.8
+supportedExtension: 2.16.840.1.113730.3.5.3
+supportedExtension: 2.16.840.1.113730.3.5.5
+supportedExtension: 2.16.840.1.113730.3.5.6
+supportedExtension: 2.16.840.1.113730.3.5.4
+supportedControl: 2.16.840.1.113730.3.4.2
+supportedControl: 2.16.840.1.113730.3.4.3
+supportedControl: 2.16.840.1.113730.3.4.4
+supportedControl: 2.16.840.1.113730.3.4.5
+supportedControl: 1.2.840.113556.1.4.473
+supportedControl: 2.16.840.1.113730.3.4.9
+supportedControl: 2.16.840.1.113730.3.4.16
+supportedControl: 2.16.840.1.113730.3.4.15
+supportedControl: 2.16.840.1.113730.3.4.17
+supportedControl: 2.16.840.1.113730.3.4.19
+supportedControl: 2.16.840.1.113730.3.4.14
+supportedControl: 1.3.6.1.4.1.1466.29539.12
+supportedControl: 2.16.840.1.113730.3.4.13
+supportedControl: 2.16.840.1.113730.3.4.12
+supportedControl: 2.16.840.1.113730.3.4.18
+supportedSASLMechanisms: EXTERNAL
+supportedSASLMechanisms: DIGEST-MD5
+dataversion: 020040318202849020040318202849020040318202849020040318202849020040318202849020040318202849020040318202849020040318202849020040318202849
+netscapemdsuffix: cn=ldap://dc=testmachine2,dc=:389

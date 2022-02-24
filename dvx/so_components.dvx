@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML_PVD_DVX FirstNode="1" NumOfNodes="1" Version="3.0"><Node Class="vdlabel # vdDirectoryView" ConnectionString="{AES}HLsnZ1raSQmr2oI270fR699Nblkpt7y99UZeWzso0k2RHiMOxbJwDWMUeTdn6D7h" Definition="so_components" FillMethod="1" GUID="0A0B002-6000-0013-2D55-9924900000001" Id="1" Name="dv" ORG="components.orx" Presentation="1" Type="1" TypeName="dv[so_components]"/></XML_PVD_DVX>

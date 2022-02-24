@@ -1,0 +1,5 @@
+#RadiantOne custom project build properties
+#Wed Feb 23 00:42:14 UTC 2022
+Date=2022/02/23 00\:42
+Author=Ant
+Version=4201

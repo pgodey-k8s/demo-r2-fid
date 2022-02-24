@@ -1,0 +1,8 @@
+[libdefaults]
+	default_realm = MYREALM.COM
+
+[realms]
+	MYREALM.COM = {
+		kdc = 127.0.0.1:88
+		default_domain = MYDOMAIN.COM
+}

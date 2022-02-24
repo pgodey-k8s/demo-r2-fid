@@ -1,0 +1,22 @@
+{
+    "id": "urn:ietf:params:scim:schemas:extension:custom:2.0:Group",
+    "name": "CustomGroup",
+    "description": "Custom Group",
+    "attributes": [
+		{
+            "name": "sAMAccountName",
+            "type": "string",
+            "multiValued": false,
+            "description": "Account name",
+            "required": false,
+            "caseExact": false,
+            "mutability": "readWrite",
+            "returned": "default",
+            "uniqueness": "none"
+        }
+    ],
+    "meta": {
+        "resourceType": "Schema",
+        "location": "/v2/Schemas/urn:ietf:params:scim:schemas:custom:2.0:Group"
+    }
+}

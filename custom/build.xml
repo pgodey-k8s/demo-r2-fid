@@ -1,0 +1,74 @@
+<project name="RadiantOne" default="buildjars" basedir=".">
+	<description>
+    	RadiantOne Custom build file
+    </description>
+	<!-- set global properties for this build -->
+	<property name="base" location="." />
+
+	<path id="classpath.default">
+		<pathelement path="${classpath}" />
+		<fileset dir="${base}/../../lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${base}/lib">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<target name="compile" description="compile the source">
+
+		<!-- Create a new classes directory for the complies classes -->
+		<mkdir dir="${base}/classes" />
+
+		<!-- Compile the java code from ${base}/src into ${build}/classes -->
+		<javac destdir="${base}/classes" memorymaximumsize="1024m" fork="true">
+			<src path="${base}/src"/>
+			<exclude name="com/rli/scripts/sync/*.java"/>
+			<classpath refid="classpath.default" />
+		</javac>
+
+		<!-- Copy all the resource files as it is not done by the compiler -->
+		<copy todir="${base}/classes" includeEmptyDirs="true">
+			<fileset dir="${base}/src">
+				<include name="**/*.properties" />
+				<include name="**/*.gif" />
+				<include name="**/*.jpg" />
+			</fileset>
+		</copy>
+
+		<!-- Generate the build file -->
+		<propertyfile file="${base}/build.txt" comment="RadiantOne custom project build properties">
+			<entry key="Author" value="Ant" />
+			<entry key="Version" type="int" default="4200" operation="+" pattern="0000" />
+			<entry key="Date" type="date" value="now" />
+		</propertyfile>
+
+	</target>
+
+	<target name="buildjars" depends="compile" description="generate the distribution">
+
+		<mkdir dir="${base}" />
+		<!-- Build customobjects.jar file -->
+		<jar jarfile="${base}/lib/customobjects.jar" basedir="${base}/classes">
+			<include name="com/rli/scripts/customobjects/**/*.*" />
+			<include name="com/rli/scripts/hooks/**/*.*" />
+		</jar>
+
+		<!-- Build intercept.jar file -->
+		<jar jarfile="${base}/lib/intercept.jar" basedir="${base}/classes">
+			<include name="com/rli/scripts/intercept/**/*.*" />
+		</jar>
+
+		<!-- Build sync.jar file -->
+		<jar jarfile="${base}/lib/sync.jar" basedir="${base}/classes">
+			<include name="com/rli/scripts/sync/**/*.*" />
+		</jar>
+		
+		<!-- Build changeMessageConvertors.jar file -->
+		<jar jarfile="${base}/lib/changeMessageConvertors.jar" basedir="${base}/classes">
+			<include name="com/rli/scripts/changeMessageConvertors/**/*.*" />
+		</jar>
+
+	</target>
+
+</project>

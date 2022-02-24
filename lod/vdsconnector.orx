@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Xml> 
+  <ORG Name="vdsconnector"> 
+    <AccessMethod>PDM</AccessMethod> 
+    <PDM> 
+      <Name>vdsconnector</Name> 
+      <DataSource>{AES}DLCHNGjFxCLHxJxI6yAGXcASskT7rCRJP8TZKMsMEVaOIbR3AAjO+1b1LqrUTOKlpKqaDZ9pLF9Cv2jDxpWRRQ==</DataSource> 
+      <DataSourceType>LDAP</DataSourceType> 
+      <Version>2.0</Version> 
+      <Tables> 
+	 
+      <Table ID="generic"><Name>generic</Name><Type>TABLE</Type><GUID/><LDAPObjectClass>vdgeneric</LDAPObjectClass><Columns><Column ID="dn"><Name>dn</Name><Type>VARCHAR(255)</Type><DataType>12</DataType><Nullable>1</Nullable></Column><Column ID="objectclass"><Name>objectclass</Name><Type>VARCHAR(255)</Type><DataType>12</DataType><Nullable>1</Nullable></Column></Columns><PrimaryKey>dn</PrimaryKey><CandidateKey/><CandidateKeyName/></Table><Table ID="cacherefresh"><Name>cacherefresh</Name><Type>TABLE</Type><GUID/><LDAPObjectClass>vdcacherefresh</LDAPObjectClass><PrimaryKey/><CandidateKey/><CandidateKeyName/></Table></Tables> 
+    </PDM> 
+  </ORG> 
+</Xml>

@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Xml>
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  <ORG Name="DefaultMapping">
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    <AccessMethod>PDM</AccessMethod>
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    <PDM>
+         
+      
+      
+      
+      
+      
+      
+      
+      
+      <Name>DefaultMapping</Name>
+         
+      
+      
+      
+      
+      
+      
+      
+      
+      <Version>1.6</Version>
+         
+      
+      
+      
+      
+      
+      
+      
+      
+      <DataSource>Provider=MSDASQL.1;Persist Security Info=False;Data Source=rli_DefaultMapping;DBMS Name=ACCESS</DataSource>
+         
+      
+      
+      
+      
+      
+      
+      
+      
+      <DataSourceType>OLEDB</DataSourceType>
+         
+      
+      
+      
+      
+      
+      
+      
+      
+      <Tables>
+            
+	
+	
+	
+	
+	
+	
+	
+	
+	<Table ID="DefaultMapping">
+               
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <Name>DefaultMapping</Name>
+               
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <Type>TABLE</Type>
+               
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <Columns>
+                  
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    <Column ID="FirstName">
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Name>FirstName</Name>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Type>VARCHAR(50)</Type>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <DataType>130</DataType>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Nullable>1</Nullable>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Alias>cn</Alias>
+                  
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    </Column>
+                  
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    <Column ID="LastName">
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Name>LastName</Name>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Type>VARCHAR</Type>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Nullable>1</Nullable>
+                  
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Alias>sn</Alias>
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    </Column>
+                  
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    <Column ID="GivenName">
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Name>GivenName</Name>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Type>VARCHAR</Type>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Nullable>1</Nullable>
+                  
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Alias>givenname</Alias>
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    </Column>
+                  
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    <Column ID="TelephoneNumber">
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Name>TelephoneNumber</Name>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Type>VARCHAR</Type>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Nullable>1</Nullable>
+                  
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Alias>telephonenumber</Alias>
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    </Column>
+                  
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    <Column ID="Title">
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Name>Title</Name>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Type>VARCHAR</Type>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Nullable>1</Nullable>
+                  
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Alias>title</Alias>
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    </Column>
+                  
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    <Column ID="Fax">
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Name>Fax</Name>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Type>VARCHAR</Type>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Nullable>1</Nullable>
+                  
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Alias>facsimiletelephonenumber</Alias>
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    </Column>
+                  
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    <Column ID="UserID">
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Name>UserID</Name>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Type>VARCHAR</Type>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Nullable>1</Nullable>
+                  
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Alias>uid</Alias>
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    </Column>
+                  
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    <Column ID="Email">
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Name>Email</Name>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Type>VARCHAR</Type>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Nullable>1</Nullable>
+                  
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Alias>mail</Alias>
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    </Column>
+                  
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    <Column ID="ProductID">
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Name>ProductID</Name>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Type>VARCHAR</Type>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Nullable>1</Nullable>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Alias>pager</Alias>
+                  
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    </Column>
+                  
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    <Column ID="abcd">
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Name>abcd</Name>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Type>VARCHAR</Type>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Nullable>1</Nullable>
+                     
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Alias>objectclass</Alias>
+                  
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    </Column>
+               
+	  
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    <Column ID="Room">
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Name>Room</Name>
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Type>VARCHAR</Type>
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Nullable>1</Nullable>
+	      
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Alias>roomnumber</Alias>
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    </Column>
+	  
+	    
+	    
+	    
+	    
+	    
+	    
+	    <Column ID="manager">
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Name>manager</Name>
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Type>VARCHAR</Type>
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Nullable>1</Nullable>
+	      
+	      
+	      
+	      
+	      
+	      
+	      <DataType>12</DataType>
+	      
+	      
+	      
+	      
+	      
+	      
+	      <Alias>man</Alias>
+	    
+	    
+	    
+	    
+	    
+	    
+	    </Column>
+	  
+	    
+	    
+	    
+	    
+	    
+	    <Column ID="Lname">
+	      
+	      
+	      
+	      
+	      
+	      <Name>Lname</Name>
+	      
+	      
+	      
+	      
+	      
+	      <Type>VARCHAR</Type>
+	      
+	      
+	      
+	      
+	      
+	      <Nullable>1</Nullable>
+	      
+	      
+	      
+	      
+	      
+	      <DataType>12</DataType>
+	      
+	      
+	      
+	      
+	      
+	      <Alias>sn</Alias>
+	    
+	    
+	    
+	    
+	    
+	    </Column>
+	  
+	    
+	    
+	    
+	    
+	    <Column ID="Fname">
+	      
+	      
+	      
+	      
+	      <Name>Fname</Name>
+	      
+	      
+	      
+	      
+	      <Type>VARCHAR</Type>
+	      
+	      
+	      
+	      
+	      <Nullable>1</Nullable>
+	      
+	      
+	      
+	      
+	      <DataType>12</DataType>
+	      
+	      
+	      
+	      
+	      <Alias>cn</Alias>
+	    
+	    
+	    
+	    
+	    </Column>
+	  
+	    
+	    
+	    
+	    <Column ID="ContactFirstName">
+	      
+	      
+	      
+	      <Name>ContactFirstName</Name>
+	      
+	      
+	      
+	      <Type>VARCHAR</Type>
+	      
+	      
+	      
+	      <Nullable>1</Nullable>
+	      
+	      
+	      
+	      <DataType>12</DataType>
+	      
+	      
+	      
+	      <Alias>cn</Alias>
+	    
+	    
+	    
+	    </Column>
+	  
+	    
+	    
+	    <Column ID="ContactLastName">
+	      
+	      
+	      <Name>ContactLastName</Name>
+	      
+	      
+	      <Type>VARCHAR</Type>
+	      
+	      
+	      <Nullable>1</Nullable>
+	      
+	      
+	      <DataType>12</DataType>
+	      
+	      
+	      <Alias>sn</Alias>
+	    
+	    
+	    </Column>
+	  
+	  
+	  </Columns>
+               
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <GUID>238fcb32-71be-11d5-b7b6-00c04f4118ad</GUID>
+               
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <LDAPObjectClass>top # person # organizationalPerson # inetorgperson</LDAPObjectClass>
+            
+	
+	
+	
+	
+	
+	
+	
+	
+	</Table>
+         
+      
+      
+      
+      
+      
+      
+      
+      
+      </Tables>
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    </PDM>
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  </ORG>
+
+
+
+
+
+
+
+
+
+</Xml>
+

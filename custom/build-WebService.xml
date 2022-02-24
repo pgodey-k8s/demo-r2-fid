@@ -1,0 +1,58 @@
+<project name="wsimport" default="import" basedir=".">
+
+	<condition property="isNameSet">
+		<isset property="name" />
+	</condition>
+	
+	<condition property="isWsdlSet">
+		<isset property="wsdl" />
+	</condition>
+	
+	<target name="envchecker">
+		<antcall target="checkname" />
+		<antcall target="checkwsdl" />
+	</target>
+	
+	<target name="checkname" unless="isNameSet">
+		<fail message="Name is missing. (to set a name use -Dname= )"/>
+	</target>
+	<target name="checkwsdl" unless="isWsdlSet">
+		<fail message="Wsdl path is missing. (to set a wsdl path use -Dwsdl= )"/>
+	</target>
+	
+	<target name="import" depends="envchecker">
+		
+		<echo>name: ${name}</echo>
+		<echo>wsdl: ${wsdl}</echo>
+		
+		<property environment="env" />
+		<property name="rlilib" value="${env.RLI_HOME}/lib" />
+				
+		<taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+			<classpath>
+				<pathelement path="${javac.classpath}:${j2ee.platform.classpath}"/>
+				<fileset dir="${rlilib}">
+					<include name="webservices-tools.jar" />
+				</fileset>
+			</classpath>
+		</taskdef>
+
+		<wsimport
+	  		keep="true"
+	  		destdir="src"
+	  		package="com.rli.scripts.customobjects.${name}"
+	  		wsdl="${wsdl}">			
+		</wsimport>
+		
+		<!-- delete compiled class (XnoCompile not supported yet)-->
+		<delete>
+			<fileset dir="src/com/rli/scripts/customobjects/${name}">
+				<include name="**/*.class" />
+			</fileset>
+		</delete>
+		
+		<echo>Client has been generated in com.rli.scripts.customobjects.${name}</echo>
+		<echo>!! YOU NOW NEED TO REFRESH YOUR CUSTOM PROJECT (F5) !!</echo>
+	</target>
+
+</project>
